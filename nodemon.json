@@ -1,11 +1,9 @@
 {
     "watch": ["src"],
-    "ignore": ["dist"],
-    "ext": "ts,html,scss",
+    "ignore": ["dist", ".git", "node_modules"],
+    "ext": "ts",
     "env": {
         "NODE_ENV": "development"
     },
-    "execMap": {
-        "ts": "ts-node ./src"
-    }
+    "exec": "./node_modules/.bin/ts-node ./src"
 }
