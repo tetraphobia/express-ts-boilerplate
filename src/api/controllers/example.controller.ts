@@ -1,5 +1,4 @@
 import { Request, Response } from 'express'
-import logger from 'jet-logger'
 
 /**
  * POST request controller.
@@ -9,8 +8,7 @@ import logger from 'jet-logger'
  * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function create (req: Request, res: Response) {
-  logger.info(req.headers)
-  return res.status(201).send('OK')
+  return res.status(201).send('CREATED')
 }
 
 /**
@@ -21,7 +19,6 @@ export function create (req: Request, res: Response) {
  * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function deleteOne (req: Request, res: Response) {
-  logger.info(req.headers)
   return res.status(200).send('OK')
 }
 
@@ -33,7 +30,6 @@ export function deleteOne (req: Request, res: Response) {
  * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function getAll (req: Request, res: Response) {
-  logger.info(req.headers)
   return res.status(200).send('OK')
 }
 
@@ -45,7 +41,6 @@ export function getAll (req: Request, res: Response) {
  * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function getOne (req: Request, res: Response) {
-  logger.info(req.headers)
   return res.status(200).send('OK')
 }
 
@@ -57,6 +52,5 @@ export function getOne (req: Request, res: Response) {
  * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function update (req: Request, res: Response) {
-  logger.info(req.headers)
   return res.status(200).send('OK')
 }
