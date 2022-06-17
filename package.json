@@ -5,7 +5,9 @@
   "author": "Jacob Teddy <tetraphobia>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint . --fix"
+    "lint": "eslint .",
+    "start": "nodemon",
+    "start:prod": "NODE_ENV=production node ./dist",
   },
   "devDependencies": {
     "@tsconfig/node18": "^1.0.1",
@@ -19,6 +21,7 @@
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
     "express": "^4.18.1",
+    "nodemon": "^2.0.16",
     "ts-node": "^10.8.1",
     "typescript": "^4.7.3"
   }

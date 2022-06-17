@@ -1,0 +1,11 @@
+{
+    "watch": ["src"],
+    "ignore": ["dist"],
+    "ext": "ts,html,scss",
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "execMap": {
+        "ts": "ts-node ./src"
+    }
+}
