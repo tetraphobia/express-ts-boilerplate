@@ -6,7 +6,7 @@ import logger from 'jet-logger'
  *
  * @param {Request} req Express Request
  * @param {Response} res Express Response
- * @returns {Response} an Express Response
+ * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function create (req: Request, res: Response) {
   logger.info(req.headers)
@@ -18,7 +18,7 @@ export function create (req: Request, res: Response) {
  *
  * @param {Request} req Express Request
  * @param {Response} res Express Response
- * @returns {Response} an Express Response
+ * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function deleteOne (req: Request, res: Response) {
   logger.info(req.headers)
@@ -30,7 +30,7 @@ export function deleteOne (req: Request, res: Response) {
  *
  * @param {Request} req Express Request
  * @param {Response} res Express Response
- * @returns {Response} an Express Response
+ * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function getAll (req: Request, res: Response) {
   logger.info(req.headers)
@@ -42,7 +42,7 @@ export function getAll (req: Request, res: Response) {
  *
  * @param {Request} req Express Request
  * @param {Response} res Express Response
- * @returns {Response} an Express Response
+ * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function getOne (req: Request, res: Response) {
   logger.info(req.headers)
@@ -54,7 +54,7 @@ export function getOne (req: Request, res: Response) {
  *
  * @param {Request} req Express Request
  * @param {Response} res Express Response
- * @returns {Response} an Express Response
+ * @returns {Response<any, Record<string, any>>} an Express Response
  */
 export function update (req: Request, res: Response) {
   logger.info(req.headers)
